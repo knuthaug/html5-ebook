@@ -4,17 +4,30 @@ li div {
   -webkit-border-radius: 5px;
   background-color: #f1f1f1;
   text-align: center;
-  font-size: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 35px;
+  margin: auto;
 }
 
 body {  
   background-color: #999999;
   font-family: Verdana, Helvetica, sans-serif;
+  text-align: center;
   
+}
+
+.video-js-box { 
+  width: 700px;
+  height: 300px;
+  border: 0;
+}
+
+video { 
+}
+
+p { 
+  text-align: left;
+  width: 60%;
+  margin: 20px auto 30px auto;
 }
 
 ul { 
@@ -29,13 +42,26 @@ html {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
    li div { 
-     height: 945px;
+     height: 985px;
    }
+
+  .video-js-box { 
+    margin: 25px 15px 25px 25px;
+
+  }
+
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   li div { 
-    height: 690px;
+    height: 725px;
   }
 
+  .video-js-box { 
+    margin: 25px 15px 25px 150px;
+
+  }
+
+  video { 
+  }
 }

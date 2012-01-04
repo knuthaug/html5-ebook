@@ -10,15 +10,51 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <link rel='stylesheet' href='style.css'/>
-  </head>
+    </head>
   <body>
     <div id='book'>
       
       <div id='slider'>
         <ul>
-          <li style='display:block'><div>side 1</div></li>
-          <li style='display:none'><div>side 2</div></li>
-          <li style='display:none'><div>side 3</div></li>
+          <li style='display:block'>
+            <div>
+              <div class="video-js-box">
+                <video id="example_video_1" class="video-js" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" controls preload>
+                  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />    
+                </video>
+              </div>
+              <p>
+                Dette er en test av teksten som skal ligge under. 
+              </p>
+              <p>
+                Kommer det linjeskift?
+              </p>
+                
+              <p>
+                Dette blir bra.
+              </p>
+            </div>
+          </li>
+          <li style='display:none'>
+            <div>
+
+              <img src="medium.jpg" width="700" height="512"/>
+
+              <p>
+                Dette er en test av teksten som skal ligge under. 
+              </p>
+              <p>
+                Kommer det linjeskift?
+              </p>
+                
+              <p>
+                Dette blir bra.
+              </p>
+            </div>
+          </li>
+          <li style='display:none'>
+            <div>side 3</div>
+          </li>
           </ul>
       </div>
 
@@ -31,6 +67,7 @@
       window.mySwipe = new Swipe(
         document.getElementById('slider')
       );
+
     </script>
 
 </body> 
