@@ -1,0 +1,37 @@
+li div { 
+         border: 1px solid #c1c1c1;
+         border-radius: 5px;
+         -webkit-border-radius: 5px;
+         background-color: #f1f1f1;
+         text-align: center;
+         font-size: 30px;
+         margin-left: auto;
+         margin-right: auto;
+}
+
+body {  
+       background-color: #999999;
+}
+
+ul { 
+     margin: 0;
+     padding: 0;
+
+}
+
+html {
+  height:100%;
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
+  li div { 
+           height: 985px;
+ }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  li div { 
+           height: 730px;
+ }
+}
