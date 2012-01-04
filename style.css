@@ -1,22 +1,25 @@
 li div { 
-         border: 1px solid #c1c1c1;
-         border-radius: 5px;
-         -webkit-border-radius: 5px;
-         background-color: #f1f1f1;
-         text-align: center;
-         font-size: 30px;
-         margin-left: auto;
-         margin-right: auto;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 body {  
-       background-color: #999999;
+  background-color: #999999;
+  font-family: Verdana, Helvetica, sans-serif;
+  
 }
 
 ul { 
-     margin: 0;
-     padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -25,13 +28,14 @@ html {
 
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
-  li div { 
-           height: 985px;
- }
+   li div { 
+     height: 945px;
+   }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   li div { 
-           height: 730px;
- }
+    height: 690px;
+  }
+
 }
