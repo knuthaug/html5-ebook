@@ -1,0 +1,30 @@
+<li style='display:none'>
+  <div>
+    <img src="img/logo_r.jpg" />
+    
+    <p>
+
+    </p>
+    <p>
+  
+  </p>
+  </div>
+</li>
+
+
+<li style='display:none'>
+  <div>
+    <div class="video-js-box">
+      <video id="" class="video-js" width="640" height="360" controls preload>
+        <source src="" type='video/mp4' />    
+      </video>
+    </div>
+    
+    <p>
+
+    </p>
+    <p>
+  
+  </p>
+  </div>
+</li>
