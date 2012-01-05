@@ -1,0 +1,3 @@
+#!/bin/bash
+
+convert -resize 768x768 $1 $2
