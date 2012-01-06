@@ -14,11 +14,9 @@
 
 <li style='display:none'>
   <div>
-    <div class="video-js-box">
       <video id="" class="video-js" width="640" height="360" controls preload>
         <source src="" type='video/mp4' />    
       </video>
-    </div>
     
     <p>
 
