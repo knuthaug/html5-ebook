@@ -4,7 +4,7 @@ li div {
   -webkit-border-radius: 5px;
   background-color: #f1f1f1;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   margin: auto;
 }
 
@@ -22,11 +22,14 @@ body {
 }
 
 video { 
+  border: 1px solid #999999;
+  -webkit-box-shadow: 1px 1px 4px #666;
+  -webkit-border-radius: 3px;
 }
 
 p { 
   text-align: left;
-  width: 60%;
+  width: 70%;
   margin: 20px auto 30px auto;
 }
 
@@ -40,9 +43,10 @@ html {
 }
 
 img {
-  margin-top: 10px;
+  margin-top: 15px;
   border: 1px solid #999999;
   -webkit-box-shadow: 1px 1px 4px #666;
+  -webkit-border-radius: 3px;
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){
@@ -51,8 +55,7 @@ img {
    }
 
   .video-js-box { 
-    margin: 25px 15px 25px 25px;
-
+    margin: 10px 15px 25px 25px;
   }
 
 }
@@ -63,7 +66,7 @@ img {
   }
 
   .video-js-box { 
-    margin: 25px 15px 25px 150px;
+    margin: 10px 15px 25px 150px;
 
   }
 
