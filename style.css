@@ -61,6 +61,10 @@ img {
     margin: 10px 15px 25px 25px;
   }
 
+  ul.menu {
+    top: 350px;
+  }
+
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -73,6 +77,44 @@ img {
 
   }
 
-  video { 
+  ul.menu {
+    top: 100px;
   }
+}
+
+ul.menu  {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border: 1px solid #999999;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 4px #999999;
+  list-style-type: none;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+  padding: 0 8px 0 8px;
+  border-right: 1px solid #999999;
+}
+
+.disabled a {
+  color: #919191;
+}
+
+ul.menu li:last-child {
+  border-width: 0;
+}
+
+li a {
+  color: #444;
+  text-decoration: none;
+  
 }
