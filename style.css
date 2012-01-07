@@ -62,7 +62,6 @@ img {
   }
 
   ul.menu {
-    top: 350px;
   }
 
 }
@@ -78,22 +77,21 @@ img {
   }
 
   ul.menu {
-    top: 100px;
   }
 }
 
 ul.menu  {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: -40px;
+  height: 40px;
   border: 1px solid #999999;
   -webkit-border-radius: 5px;
   -webkit-box-shadow: 1px 1px 4px #999999;
   list-style-type: none;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
 }
 

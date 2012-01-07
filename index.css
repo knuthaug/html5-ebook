@@ -23,16 +23,18 @@ ul  {
   -webkit-border-radius: 8px;
   -webkit-box-shadow: 1px 1px 4px #999999;
   list-style-type: none;
-  width: 200px;
+  width: 300px;
   margin: 10px auto;
   padding: 0;
 }
 
 ul li {
+  text-align: left;
   font-size: 140%;
   font-weight: bold;
   margin: 0;
   padding: 6px;
+  padding-left: 10px;
   border-bottom: 2px solid #999999;
 
 }
