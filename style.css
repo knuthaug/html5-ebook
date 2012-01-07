@@ -83,19 +83,20 @@ img {
 ul.menu  {
   position: absolute;
   bottom: 0;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: auto;
   margin-top: -40px;
+  margin-bottom: 20px;
   height: 40px;
-  border: 1px solid #999999;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 4px #999999;
   list-style-type: none;
   width: 400px;
   padding: 0;
 }
 
 ul.menu li {
+  border: 1px solid #999999;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 4px #999999;
   display: inline;
   font-size: 100%;
   margin: 0;
@@ -108,7 +109,6 @@ ul.menu li {
 }
 
 ul.menu li:last-child {
-  border-width: 0;
 }
 
 li a {
