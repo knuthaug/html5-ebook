@@ -58,8 +58,19 @@ img {
      height: 985px;
    }
 
+  #simple-modal img {
+    margin-top: 200px;
+  }
+
   .video-js-box { 
     margin: 10px 15px 25px 25px;
+  }
+
+  #simple-modal a.close {
+    position: absolute;
+    top: 15px;
+   right: 160px;
+   width: 10px;
   }
 
   ul.menu {
@@ -71,6 +82,16 @@ img {
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   li div { 
     height: 725px;
+  }
+
+  #simple-modal img {
+    margin-top: 100px;
+  }
+
+ #simple-modal a.close {
+   position: absolute;
+   top: 15px;
+   right: 15px;
   }
 
   .video-js-box { 

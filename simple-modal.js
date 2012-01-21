@@ -388,7 +388,7 @@ var SimpleModal = new Class({
          
       // Update position popup
       try{
-        var offsetTop = this.options.offsetTop || 40; //this.options.offsetTop != null ? this.options.offsetTop : window.getScroll().y + 40;
+        var offsetTop = this.options.offsetTop || 0; //this.options.offsetTop != null ? this.options.offsetTop : window.getScroll().y + 40;
         $("simple-modal").setStyles({
           top: offsetTop,
           left: ((window.getCoordinates().width - $("simple-modal").getCoordinates().width)/2 )
