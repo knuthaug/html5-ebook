@@ -11,8 +11,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="pragma" content="no-cache"/>
+    <link rel="stylesheet" href="../../simplemodal.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
     <link rel="stylesheet" href="../../style.css"/>
     <script type="text/javascript" src="../../index.js"></script>
+    <script src="../../mootools-core-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mootools-more-1.3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../../simple-modal.js"></script>
 
    </head>
   <body>
@@ -22,7 +27,7 @@
         <ul>
           <li style="display:block">
             <div>
-              <img src="img/0_r.png" />
+              <img id="image-0" src="img/0_r.png" alt=""/>
               <h1>Kapittel 1</h1>
               <h2>Uro på Korusant</h2>
              <!--#include virtual="menu.txt" -->
@@ -31,7 +36,7 @@
           
           <li style="display:none">
             <div>
-              <img src="img/1_r.png" />
+              <img id="image-1" src="img/1_r.png" />
               <p>
               Det er uro i senatet. 
               </p>
@@ -62,7 +67,7 @@
 
           <li style="display:none">
            <div>
-            <img src="img/2_r.png" />
+            <img id="image-2" src="img/2_r.png" />
              <p>
                Når skipet lander, sprenger en bombe.
             </p>
@@ -77,7 +82,7 @@
 
           <li style="display:none">
            <div>
-             <img src="img/3_r.png"/>
+             <img id="image-3" src="img/3_r.png"/>
              <p>
                Jedirådet snakker med Palpatine, sjefen i senatet.
             </p>
@@ -98,10 +103,34 @@
 
     <script src="../../lib/swipe.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+     
       // slider
       window.mySwipe = new Swipe(
         document.getElementById("slider")
       );
+
+      function loop_images(item, index) {
+          var id = item.id;
+          $("image-" + index).addEvent("click", function(e){
+          e.stop();
+          var SM = new SimpleModal({
+          "onAppend":function(){
+            $("simple-modal").fade("hide").fade("in")
+          }
+        });
+        SM.show({
+          "model":"modal-ajax",
+					"title": "Bilde " + index,
+          "param":{
+             "url":"img/" + index + ".png",
+            "onRequestComplete": function(){ }
+            }
+          });
+        });
+      }
+
+      $$("img").each(loop_images);
+
 
     </script>
 
