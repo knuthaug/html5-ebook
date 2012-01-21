@@ -1,0 +1,5 @@
+          <ul class="menu">
+              <li><a href="#" onClick="javascript:window.location.assign('/book/book1/chapter2/'); return false;">Forrige</a></li>
+              <li><a href="#" onClick="javascript:window.location.assign('/book/book1/'); return false;">Meny</a></li>
+             <li><a href="#" onClick="javascript:window.location.assign('/book/book1/chapter4/'); return false;">Neste</a></li>
+           </ul>

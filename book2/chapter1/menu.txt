@@ -1,0 +1,4 @@
+              <ul class="menu">
+               <li><a href="#" onClick="go_to('/book/book2/');">Meny</a></li>
+               <li><a href="#" onClick="go_to('/book/book2/chapter2/');">Neste kapittel</a></li>
+             </ul>
