@@ -15,9 +15,6 @@
 
     <link rel="stylesheet" href="../../style.css"/>
     <script type="text/javascript" src="../../index.js"></script>
-    <script src="../../mootools-core-1.3.1.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../../mootools-more-1.3.1.1.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="../../simple-modal.js"></script>
 
    </head>
   <body>
@@ -91,6 +88,117 @@
             </p>
             <p>
               Obi-wan og Anakin skal passe på Padme.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+         <li style="display:none">
+           <div>
+             <video id="video-2" class="video-js" width="640" height="360" controls preload>
+               <source src="video/2.m4v" type="video/mp4" />    
+             </video>
+             <p>
+               Obi-Wan og Anakin møter Padme igjen.
+            </p>
+            <p>
+              Anakin vil finne ut hvem som lagde bomben.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+         
+          <li style="display:none">
+           <div>
+             <img id="image-4" src="img/4_r.png"/>
+             <p>
+               En mystisk person leier noen til å prøve å drepe Padme.
+            </p>
+            <p>
+              De skal bruke giftige larver.
+            </p>
+            <p>
+              
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+          <li style="display:none">
+           <div>
+             <video id="video-3" class="video-js" width="640" height="360" controls preload>
+               <source src="video/3.m4v" type="video/mp4" />    
+             </video>
+             <p>
+               Larvene blir sluppet inn i Padmes rom.
+            </p>
+            <p>
+              R2-D2 ser dem ikke.
+            </p>
+            <p>
+              Anakin redder Padme i siste liten. Obi-Wan Hopper etter maskinen.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+          <li style="display:none">
+           <div>
+             <video id="video-4" class="video-js" width="640" height="360" controls preload>
+               <source src="video/4.m4v" type="video/mp4" />    
+             </video>
+             <p>
+               Anakin flyr gjennom byen og holder seg fast.
+            </p>
+            <p>
+              Anakin kommer etter i en speeder.
+            </p>
+            <p>
+              De vil finne ut hvem som sendte den.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+          <li style="display:none">
+           <div>
+             <video id="video-5" class="video-js" width="640" height="360" controls preload>
+               <source src="video/5.m4v" type="video/mp4" />    
+             </video>
+             <p>
+               De mister skurken av syne. 
+            </p>
+            <p>
+              Plutselig hopper Anakin ut av speederen. 
+            </p>
+            <p>
+              Han lander på skipet til skurken.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+          <li style="display:none">
+           <div>
+             <img src="img/5_r.png" id="image-5"/>
+             <p>
+               Skurkens skip krasjer.
+            </p>
+            <p>
+              Anakin og Obi-Wan følger etter.
+            </p>
+             <!--#include virtual="menu.txt" -->
+          </div>
+         </li>
+
+         <li style="display:none">
+           <div>
+             <img src="img/6_r.png" id="image-6"/>
+             <p>
+               De fanger skurken.
+            </p>
+            <p>
+              Akkurat da han skal si hvem som leide han, blir han truffet av en giftig pil.
+            </p>
              <!--#include virtual="menu.txt" -->
           </div>
          </li>
@@ -108,29 +216,6 @@
       window.mySwipe = new Swipe(
         document.getElementById("slider")
       );
-
-      function loop_images(item, index) {
-          var id = item.id;
-          $("image-" + index).addEvent("click", function(e){
-          e.stop();
-          var SM = new SimpleModal({
-          "onAppend":function(){
-            $("simple-modal").fade("hide").fade("in")
-          }
-        });
-        SM.show({
-          "model":"modal-ajax",
-					"title": "Bilde " + index,
-          "param":{
-             "url":"img/" + index + ".png",
-            "onRequestComplete": function(){ }
-            }
-          });
-        });
-      }
-
-      $$("img").each(loop_images);
-
 
     </script>
 
