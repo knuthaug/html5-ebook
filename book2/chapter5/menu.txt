@@ -1,0 +1,5 @@
+            <ul class="menu">
+               <li><a onClick="go_to('/book/book2/chapter4/index.html'); ">Forrige</a></li>
+               <li><a onClick="go_to('/book/book2/index.html');">Meny</a></li>
+              <li><a onClick="go_to('/book/book2/chapter6/index.html'); ">Neste</a></li>
+             </ul>
