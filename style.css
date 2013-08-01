@@ -6,7 +6,7 @@ li div {
   -webkit-border-radius: 5px;
   background-color: #f1f1f1;
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   margin: auto;
 }
 
@@ -33,7 +33,7 @@ video {
 p { 
   text-align: left;
   width: 70%;
-  margin: 20px auto 30px auto;
+  margin: 10px auto 20px auto;
 }
 
 ul { 
